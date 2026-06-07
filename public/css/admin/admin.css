@@ -1,0 +1,404 @@
+.adminPage {
+    padding: var(--space-sm);
+    color: var(--text);
+    background: var(--bg);
+}
+
+.adminHeader {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.adminTitle {
+    font-size: var(--font-xl);
+    font-weight: 600;
+    color: var(--text);
+}
+
+.adminTableWrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.adminTable {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+.adminTableHead th {
+    text-align: left;
+    padding: var(--space-sm);
+    font-size: var(--font-sm);
+    background: var(--panelBg);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+}
+
+.adminTableRow {
+    border-bottom: 1px solid var(--border);
+}
+
+.adminTableRow:hover {
+    background: var(--cardHover);
+}
+
+.adminTableCell {
+    padding: var(--space-sm);
+    font-size: var(--font-sm);
+    color: var(--text);
+    vertical-align: middle;
+}
+
+.adminImageThumb {
+    width: var(--avatar-sm);
+    height: var(--avatar-sm);
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+}
+
+.adminActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.adminBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-xs);
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.adminBtnPrimary {
+    background: #3b82f6;
+    color: white;
+}
+
+.adminBtnPrimary:hover {
+    background: #2563eb;
+}
+
+.adminBtnWarning {
+    background: #f59e0b;
+    color: black;
+}
+
+.adminBtnWarning:hover {
+    background: #d97706;
+}
+
+.adminBtnDanger {
+    background: var(--delete);
+    color: white;
+}
+
+.adminBtnDanger:hover {
+    filter: brightness(1.1);
+}
+
+.adminEmpty {
+    text-align: center;
+    padding: var(--space-lg);
+    color: var(--muted);
+}
+
+
+.adminForm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.adminFormGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.adminLabel {
+    font-size: var(--font-sm);
+    color: var(--text);
+}
+
+.adminInput {
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    outline: none;
+}
+
+.adminInput:focus {
+    border-color: var(--primary);
+}
+
+.adminImagePreview {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+}
+
+.adminInput[type="file"] {
+    padding: var(--space-sm);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    font-size: var(--font-sm);
+    width: 100%;
+}
+
+.adminInput[type="file"]::file-selector-button {
+    padding: var(--space-xs) var(--space-sm);
+    margin-right: var(--space-sm);
+    border: none;
+    border-radius: var(--radius-sm);
+    background: var(--panelBg);
+    color: var(--text);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.adminInput[type="file"]::file-selector-button:hover {
+    filter: brightness(1.1);
+}
+
+
+.adminDetailCard {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+}
+
+.adminDetailRow {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xs);
+}
+
+.adminDetailLabel {
+    font-size: var(--font-xs);
+    color: var(--muted);
+}
+
+.adminDetailValue {
+    font-size: var(--font-md);
+    color: var(--text);
+}
+
+.adminDetailImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+}
+
+.adminSubTitle {
+    font-size: var(--font-lg);
+    margin: var(--space-md) 0;
+    color: var(--text);
+}
+
+.adminGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+}
+
+.adminCard {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.adminCardImage {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.adminCardBody {
+    padding: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.adminCardTitle {
+    font-size: var(--font-md);
+    color: var(--text);
+}
+
+.adminLink {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.adminLink:hover {
+    text-decoration: underline;
+}
+
+.adminMuted {
+    color: var(--muted);
+}
+
+
+.adminCheckbox {
+    flex-direction: row;
+    align-items: center;
+}
+
+.adminCheckboxLabel {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--font-sm);
+    color: var(--text);
+}
+
+.adminInput {
+    width: 100%;
+}
+
+textarea.adminInput {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+
+.adminBadge {
+    display: inline-block;
+    padding: var(--space-2xs) var(--space-sm);
+    border-radius: var(--radius-full);
+    background: var(--panelBg);
+    color: var(--text);
+    font-size: var(--font-xs);
+}
+
+.adminDetailBanner {
+    width: 100%;
+    max-width: 400px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+}
+
+.adminDangerZone {
+    margin-top: var(--space-lg);
+    padding: var(--space-md);
+    border: 1px solid var(--delete);
+    border-radius: var(--radius-md);
+    background: rgba(255, 0, 0, 0.05);
+}
+
+.adminStatsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.adminStatCard {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.adminStatTitle {
+    font-size: var(--font-sm);
+    color: var(--muted);
+}
+
+.adminStatValue {
+    font-size: var(--font-2xl);
+    font-weight: 700;
+    color: var(--text);
+}
+
+@media (min-width: 768px) {
+    .adminStatsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .adminStatsGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .adminGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .adminGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .adminPage {
+        padding: var(--space-lg);
+    }
+
+    .adminHeader {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .adminTitle {
+        font-size: var(--font-2xl);
+    }
+
+    .adminTableHead th {
+        font-size: var(--font-md);
+    }
+
+    .adminTableCell {
+        font-size: var(--font-md);
+    }
+}

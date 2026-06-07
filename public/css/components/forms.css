@@ -1,0 +1,599 @@
+
+.formHeader {
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border);
+}
+
+.formHeader h2 {
+    margin: 0 0 8px;
+}
+
+.formHeader p {
+    margin: 0 0 15px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.formSection {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 14px;
+}
+
+.formLabel {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.inputField,
+.selectField,
+.textareaField,
+.fileField {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.textareaField {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.inputField:focus,
+.selectField:focus,
+.textareaField:focus,
+.fileField:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.checkRow {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.checkField {
+    width: 17px;
+    height: 17px;
+    accent-color: var(--primary);
+}
+
+.formActions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.primaryBtn {
+    padding: 9px 13px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    background: var(--panelBg);
+    color: var(--text);
+}
+
+.primaryBtn:hover {
+    background: var(--panelBgHover);
+}
+
+.previewImage {
+    margin-top: 10px;
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.centerPage {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authSection {
+    width: min(400px, 100%);
+}
+
+.authSwitch {
+    margin: 0;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.authSwitch a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.authSwitch a:hover {
+    text-decoration: underline;
+}
+
+.fileField {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    width: 80%;
+    background: var(--bg);
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.fileField::file-selector-button {
+    margin-right: 12px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--panelBg);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.fileField::file-selector-button:hover {
+    background: var(--panelBgHover);
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+.buttonReset {
+    border: none;
+    background: transparent;
+}
+
+.settingsPage {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    color: var(--text);
+}
+
+.settingsHeader {
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border);
+}
+
+.settingsHeader h2 {
+    margin: 0 0 15px;
+}
+
+.settingsNav {
+    display: flex;
+    gap: 10px;
+}
+
+.settingsNavItem {
+    padding: 12px 14px;
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.settingsNavItem:hover,
+.settingsNavItem.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+.settingsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.settingsSection {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.settingsRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.settingsInfo h3,
+.sectionTitle {
+    margin: 0 0 5px;
+    font-size: 17px;
+}
+
+.settingsInfo p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.inputField,
+.selectField {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.primaryBtn,
+.optionBtn,
+.dangerBtn {
+    padding: 9px 13px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    background: var(--panelBg);
+    color: var(--text);
+}
+
+.primaryBtn:hover,
+.optionBtn:hover {
+    background: var(--panelBgHover);
+}
+
+
+.textareaField {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--text);
+    resize: vertical;
+    font-family: inherit;
+}
+
+.textareaField:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+
+.dangerBtn {
+    color: var(--delete);
+}
+
+.dangerBtn:hover {
+    background: rgba(255, 0, 0, 0.08);
+}
+
+.modalContainer {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    color: var(--text);
+}
+
+.modal {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 24px;
+    border: 1px solid var(--border);
+    animation: modalFade 0.2s ease;
+    position: relative;
+}
+
+.deleteModal {
+    width: min(420px, 90%);
+}
+
+.deleteModal form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 24px;
+    color: var(--muted);
+    transition: all 0.2s ease;
+    background: transparent;
+    border: none;
+}
+
+.deleteModal h3 {
+    font-size: 20px;
+    color: var(--text);
+}
+
+.deleteModal input {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+}
+
+.showModal {
+    display: flex;
+}
+
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.settingsForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.settingsForm img {
+    width: 100px;
+}
+
+.settingsContentForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.formLabel {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.colorField {
+    width: 70px;
+    height: 42px;
+    padding: 4px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    cursor: pointer;
+}
+
+.sectionList {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionItem {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sectionItem:hover {
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+.sectionMain {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sectionColorDot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.sectionThumb {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(95, 111, 122);
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border);
+}
+
+.sectionActions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.memberActions {
+    display: flex;
+    gap: 8px;
+}
+
+.iconBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.iconBtn:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.acceptBtn { color: #22c55e; }
+.rejectBtn { color: #ef4444; }
+.removeBtn { color: #f97316; }
+.banBtn    { color: #dc2626; }
+
+.iconBtn {
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.iconBtn:hover {
+    transform: scale(1.1);
+}
+
+.iconBtn:active {
+    transform: scale(0.95);
+}
+
+.acceptBtn:hover {
+    background: rgba(34, 197, 94, 0.1);
+}
+
+.rejectBtn:hover {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.removeBtn:hover {
+    background: rgba(249, 115, 22, 0.1);
+}
+
+.banBtn:hover {
+    background: rgba(220, 38, 38, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+.customSelect {
+    position: relative;
+    cursor: pointer;
+}
+
+.customSelectTrigger {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+}
+
+.customSelectDropdown {
+    display: none;
+    position: absolute;
+    max-width: 600px;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-top: 6px;
+    z-index: 100;
+    box-shadow: 0px 0px 10px rgba(121, 121, 121, 0.303);
+}
+
+.customSelect.open .customSelectDropdown {
+    display: block;
+}
+
+.postBlock {
+    display: none;
+}
+
+#textPost {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.subNav {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.subNavItem {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--surface2);
+    color: var(--textColor);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.subNavItem:hover {
+    opacity: 0.85;
+}
+
+.subNavItem.active {
+    background: var(--accent);
+    color: rgb(149, 180, 215);
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .settingsForm {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,162 @@
+header {
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+#header {
+    margin: 0 auto;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    .headerSearch {
+        flex: 1;
+        max-width: 480px;
+        display: flex;
+        align-items: center;
+
+        input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid var(--border);
+            border-right: none;
+            border-radius: 12px 0 0 12px;
+            background: var(--card);
+            color: var(--text);
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        button {
+            padding: 10px 14px;
+            border: 1px solid var(--border);
+            border-radius: 0 12px 12px 0;
+            background: var(--panelBg);
+            color: var(--text);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: var(--panelBgHover);
+            color: var(--primary);
+        }
+    }
+
+    .headerRight {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .headerLogin a {
+        padding: 9px 13px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        background: var(--panelBg);
+        color: var(--text);
+        text-decoration: none;
+    }
+
+    .headerLogin a:hover {
+        background: var(--panelBgHover);
+        color: var(--primary);
+    }
+
+    .profileDropdown {
+        position: relative;
+
+        .profileUser {
+            width: 42px;
+            height: 42px;
+        }
+
+        .profileUser img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profileUser span {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .profileUser:hover {
+            box-shadow: 0 0 10px rgba(128, 128, 128, 0.35);
+        }
+
+        .profileMenu {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            min-width: 260px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 8px 0;
+            z-index: 10000;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+            .proItem {
+                margin: 4px auto;
+                width: 92%;
+
+                a,
+                button {
+                    width: 100%;
+                    color: var(--text);
+                    text-decoration: none;
+                    padding: 12px 14px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 10px;
+                    border: none;
+                    background: transparent;
+                    text-align: start;
+                    cursor: pointer;
+                }
+
+                a:hover,
+                button:hover {
+                    color: var(--primary);
+                    background: var(--panelBg);
+                }
+
+                i {
+                    font-size: 16px;
+                    width: 22px;
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        .profileMenuOpen {
+            display: block;
+        }
+    }
+}
+
+#logo {
+    display: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--logo);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
+}
+
+@media screen and (min-width:1200px) {
+    #logo {
+        display: block;
+    }
+}

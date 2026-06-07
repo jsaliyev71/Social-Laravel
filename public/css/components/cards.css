@@ -1,0 +1,527 @@
+
+.cardNameHeader {
+    display: flex;
+}
+
+.cardProfile {
+    flex-shrink: 0;
+    font-size: 20px;
+    width: var(--avatar-md);
+    height: var(--avatar-md);
+}
+
+.cardDescription {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cardContent {
+    flex: 1;
+    min-width: 0;
+
+    padding-left: var(--space-md);
+}
+
+.cardName {
+    display: inline-block;
+
+    padding-right: var(--space-sm);
+
+    font-weight: 700;
+    font-size: var(--font-md);
+    color: var(--text);
+    margin-bottom: 4px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.communityCard {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: var(--space-sm);
+    padding: var(--space-md);
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    color: var(--text);
+    text-decoration: none;
+
+    .cardContent {
+        min-width: 100px;
+    }
+}
+
+.communityCard:hover {
+    transform: translateY(-2px);
+    background: var(--cardHover);
+    border-color: var(--primary);
+}
+
+.cardName:hover,
+.communityCategory:hover {
+    text-decoration: underline;
+}
+
+.communityCategory {
+    display: inline-block;
+
+    margin-left: var(--space-xs);
+
+    color: var(--spanText);
+
+    font-size: var(--font-xs);
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.cardDescription {
+    margin-top: var(--space-xs);
+    padding-left: var(--space-xs);
+
+    color: var(--desciption);
+
+    font-size: var(--font-sm);
+    line-height: 1.4;
+}
+
+
+
+
+.postCardContainer {
+    max-width: 750px;
+    margin: 0 auto;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.postCardContainer:first-child {
+    border-top: 1px solid var(--border);
+}
+
+.postCardContainer:hover {
+    cursor: pointer;
+    background-color: var(--postCardHover);
+}
+
+.postCard {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0 auto;
+    padding: var(--space-md);
+}
+
+.postTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding-bottom: var(--space-sm);
+}
+
+.postTop a {
+    text-decoration: none;
+}
+
+.postUser {
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-md);
+
+    min-width: 0;
+}
+
+.postInfo {
+    min-width: 0;
+}
+
+.postImage {
+    width: var(--avatar-sm);
+    height: var(--avatar-sm);
+
+    display: flex;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    background: var(--panelBg);
+}
+
+.postUsername {
+    min-width: 0;
+
+    font-size: var(--font-lg);
+    font-weight: 600;
+
+    color: var(--text);
+}
+
+.postTitle {
+    padding: var(--space-xs) 0;
+
+    font-size: var(--font-xl);
+    font-weight: 700;
+    line-height: 1.3;
+
+    color: var(--text);
+}
+
+.cardDate {
+    font-size: var(--font-sm);
+    color: var(--description);
+}
+
+.cardDate::before {
+    content: "\2022 ";
+}
+
+.postContent {
+    white-space: pre-line;
+
+    font-size: var(--font-md);
+    line-height: 1.7;
+
+    color: var(--text);
+}
+
+.textPostContent {
+    overflow: hidden;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    line-clamp: 6;
+    -webkit-line-clamp: 6;
+}
+
+
+
+
+
+.postMediaGrid {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-sm);
+}
+
+.postMediaItem {
+    width: 100%;
+    max-height: min(70vh, 500px);
+
+    object-fit: cover;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    background: black;
+}
+
+
+
+
+
+.postActions {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: var(--space-sm);
+
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+}
+
+.postActionBtn {
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-xs);
+
+    padding:
+        clamp(8px, 1.5vw, 10px)
+        clamp(10px, 2vw, 14px);
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    color: var(--text);
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.postActionBtn:hover {
+    background: var(--cardHover);
+    color: var(--primary);
+}
+
+.postActionBtn i {
+    font-size: var(--font-sm);
+}
+
+.commentSection {
+    margin-top: 20px;
+}
+
+.commentCard {
+    padding: var(--space-xs);
+}
+
+.commentTop {
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-sm);
+}
+
+.commentUsername {
+    font-size: var(--font-sm);
+    font-weight: 600;
+
+    color: var(--text);
+    text-decoration: none;
+}
+
+.commentUsername:hover {
+    color: var(--primary);
+}
+
+.commentBottom {
+    padding-left: var(--space-sm);
+}
+
+.commentContent {
+    margin-top: var(--space-sm);
+
+    font-size: var(--font-md);
+    line-height: 1.5;
+
+    color: var(--text);
+
+    word-break: break-word;
+}
+
+.commentDeleted {
+    color: var(--muted);
+    font-style: italic;
+}
+
+.commentActions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: var(--space-sm);
+}
+
+.commentActionBtn {
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-xs);
+
+    padding:
+        clamp(5px, 1vw, 6px)
+        clamp(6px, 1.5vw, 8px);
+
+    border: none;
+    border-radius: var(--radius-sm);
+
+    background: transparent;
+
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.commentActionBtn:hover {
+    background: var(--panelBgHover);
+    color: var(--text);
+}
+
+.commentReplies {
+    margin-left: 0;
+
+    padding-left: var(--space-xs);
+
+    border-left: 1px solid var(--border);
+}
+
+.commentOp {
+    font-size: var(--font-md);
+    font-weight: bold;
+
+    color: rgb(78, 78, 138);
+}
+
+
+
+
+
+.isHidden {
+    display: none!important;
+}
+
+.nonVisible {
+    visibility: hidden;
+}
+
+.openComment {
+    position: relative;
+}
+
+.openComment::after {
+    content: '+';
+
+    pointer-events: none;
+
+    position: absolute;
+
+    top: clamp(12px, 2vw, 20px);
+    left: clamp(12px, 2vw, 20px);
+
+    width: clamp(18px, 3vw, 20px);
+    height: clamp(18px, 3vw, 20px);
+
+    text-align: center;
+
+    color: var(--muted);
+
+    border: 2px solid var(--muted);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.postStatus {
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 10px;
+} 
+
+.postStatus_deleted {
+    background-color: rgba(145, 2, 2, 0.513);
+    border: 1px solid rgba(49, 0, 0, 0.592);
+}
+
+.postStatus_rejected {
+    background-color: rgba(124, 22, 22, 0.513);
+    border: 1px solid rgba(65, 11, 11, 0.592);
+}
+
+.postStatus_pending {
+    background-color: rgba(148, 133, 15, 0.513);
+    border: 1px solid rgba(99, 86, 12, 0.592);
+}
+
+
+
+
+.fancyButton {
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: var(--primary);
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+.pinnedPostsContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(128, 128, 128, 0.204);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.pinnedPosts {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    align-items: stretch;
+}
+
+.pinnedBtn {
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 16px;
+    background-color: rgba(128, 128, 128, 0.136);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pinnedPostContainer {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.204);
+
+    .postCard {
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .slide {
+        height: 100px;
+    }
+
+    .dropdownContainer {
+        display: none;
+    }
+}
+
+.pinnedPostContainer:hover {
+    background-color: rgba(128, 128, 128, 0.062);
+    cursor: pointer;
+}
+
+.openPinned {
+    position: relative;
+}
+
+.openPinned::after {
+    content: '+';
+
+    pointer-events: none;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: var(--muted);
+
+    border: 2px solid var(--muted);
+    border-radius: 50%;
+}

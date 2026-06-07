@@ -1,0 +1,209 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+*:not(html) {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.2) transparent;
+}
+
+*:not(html)::-webkit-scrollbar {
+    width: clamp(4px, 1vw, 6px);
+    height: clamp(4px, 1vw, 6px);
+}
+
+*:not(html)::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*:not(html)::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.15);
+    border-radius: 999px;
+}
+
+*:not(html)::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+:root {
+    --logo: rgb(32, 95, 137);
+
+    --bg: #ffffff;
+    --bgHover: #dee4eb;
+
+    --panelBg: rgb(206, 206, 228);
+    --panelBgHover: rgb(167, 167, 195);
+
+    --img: rgb(38, 48, 54);
+    --imgText: rgb(219, 230, 236);
+
+    --card: #f8f8f8;
+    --cardHover: #e3e7ee;
+
+    --text: #222;
+    --textHover: #404040;
+
+    --spanText: rgb(56, 56, 131);
+    --spanTextHover: rgb(38, 38, 88);
+
+    --muted: #666;
+    --description: rgb(123, 123, 123);
+
+    --border: #ddd;
+    --border2: rgb(8, 8, 8);
+
+    --primary: #263358;
+    --slug: rgb(58, 58, 58);
+
+    --delete: darkred;
+
+    --bannerBg1: rgb(96, 127, 157);
+    --bannerBg2: rgb(47, 61, 90);
+
+    --activeUrl: rgb(22, 67, 98);
+
+    --postCardHover: rgba(226, 226, 226, 0.762);
+
+
+
+    --space-2xs: clamp(2px, 0.5vw, 4px);
+    --space-xs: clamp(4px, 1vw, 8px);
+    --space-sm: clamp(8px, 1.5vw, 12px);
+    --space-md: clamp(12px, 2vw, 18px);
+    --space-lg: clamp(16px, 3vw, 24px);
+    --space-xl: clamp(24px, 4vw, 32px);
+
+
+
+    --radius-sm: clamp(8px, 1vw, 12px);
+    --radius-md: clamp(12px, 1.5vw, 16px);
+    --radius-lg: clamp(16px, 2vw, 20px);
+    --radius-full: 999px;
+
+
+
+    --font-xs: clamp(12px, 1.2vw, 13px);
+    --font-sm: clamp(13px, 1.4vw, 14px);
+    --font-md: clamp(15px, 1.8vw, 16px);
+    --font-lg: clamp(16px, 2vw, 18px);
+    --font-xl: clamp(18px, 2.5vw, 22px);
+    --font-2xl: clamp(24px, 4vw, 32px);
+
+
+
+    --avatar-xs: clamp(24px, 4vw, 30px);
+    --avatar-sm: clamp(30px, 5vw, 35px);
+    --avatar-md: clamp(42px, 7vw, 52px);
+    --avatar-lg: clamp(60px, 8vw, 80px);
+
+
+
+    --content-xs: min(100%, 500px);
+    --content-sm: min(100%, 750px);
+    --content-md: min(100%, 950px);
+    --content-lg: min(100%, 1200px);
+}
+
+body[data-theme="dark"] {
+    --logo: rgb(239, 239, 239);
+
+    --bg: #0e0e0f;
+    --bgHover: #2b2d2f;
+
+    --panelBg: rgb(45, 45, 46);
+    --panelBgHover: rgb(69, 69, 69);
+
+    --img: rgb(101, 128, 143);
+    --imgText: rgb(219, 230, 236);
+
+    --card: #111213;
+    --cardHover: #222224;
+
+    --text: #e9e9e9;
+    --textHover: #d5d5d5;
+
+    --spanText: rgb(157, 157, 189);
+
+    --muted: #aaa;
+    --description: rgb(180, 180, 180);
+
+    --border: #484848;
+    --border2: rgb(36, 36, 36);
+
+    --primary: #8ea2ff;
+    --slug: rgb(219, 219, 219);
+
+    --delete: rgb(255, 112, 112);
+
+    --bannerBg1: rgb(46, 46, 46);
+    --bannerBg2: rgb(127, 127, 127);
+
+    --activeUrl: rgb(241, 241, 241);
+
+    --postCardHover: rgba(28, 28, 28, 0.717);
+}
+
+html,
+body {
+    margin: 0;
+    overscroll-behavior: none;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+#body {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    width: 100%;
+    display: flex;
+}
+
+main {
+    width: 100%;
+    max-width: var(--content-md);
+
+    margin: 0 auto;
+
+    color: var(--text);
+}
+
+.profilePic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background: var(--img);
+
+    color: var(--imgText);
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+.profilePic img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}

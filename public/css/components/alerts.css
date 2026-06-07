@@ -1,0 +1,48 @@
+.alert_messages {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.alert_error {
+    color: darkred;
+    background-color: rgba(255, 0, 0, 0.06);
+    border: 2px solid darkred;
+}
+
+.alert_success {
+    color: darkgreen;
+    background-color: rgba(0, 128, 0, 0.06);
+    border: 2px solid darkgreen;
+}
+
+.alert_info {
+    color: darkblue;
+    background-color: rgba(0, 0, 255, 0.06);
+    border: 2px solid darkblue;
+}
+
+.alert_warning {
+    color: darkgoldenrod;
+    background-color: rgba(255, 255, 0, 0.06);
+    border: 2px solid darkgoldenrod;
+}
+
+.alert_animation {
+    position: fixed;
+    right: 20px;
+    transform: translateX(180%);
+    animation: alert 3s ease;
+}
+
+@keyframes alert {
+    0%   { transform: translateX(180%); }
+    25%  { transform: translateX(0); }
+    75%  { transform: translateX(0); }
+    100% { transform: translateX(120%); }
+}

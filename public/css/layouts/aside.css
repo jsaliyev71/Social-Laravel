@@ -1,0 +1,118 @@
+.asideContainer {
+    position: fixed;
+    top: 65px;
+    height: calc(100vh - 65px);
+    width: 300px;
+    flex-shrink: 0;
+    border-right: 1px solid var(--border);
+    transition: .3s ease;
+    z-index: 200;
+    background-color: var(--bg);
+    transform: translateX(-100%)
+}
+
+.asideToggle {
+    color: var(--text);
+    background: var(--bg);
+    border: none;
+    padding: 6px;
+}
+
+.asideLeft {display: none;}
+.asideHeader {display: block;}
+
+.asideToggle:hover {
+    background-color: var(--bgHover);
+}
+
+aside {
+    padding: 20px 10px;
+    color: var(--text);
+
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    overflow-x: visible;
+}
+
+.asideHeader {
+    h3 {
+        margin: 0px 10px;
+    }
+}
+
+.asideNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .navItem {
+        margin: 5px 0;
+        width: 90%;
+        
+        a {
+            width: 100%;
+            color: var(--text);
+            text-decoration: none;
+            padding: 15px 15px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        a:hover {
+            color: var(--textHover);
+            background-color: var(--panelBg);
+        }
+    }
+}
+
+aside:hover {
+    scrollbar-color: var(--border) transparent;
+}
+
+.asidePlaceholder {
+    width: 0px;
+    transition: .3s ease;
+}
+
+.asideWidth {
+    width: 0px !important;
+}
+
+.toggleAside {
+    transform: translateX(0%)
+}
+
+
+@media screen and (min-width:1200px) {
+    
+    .asideContainer {
+        top: 65px;
+        height: calc(100vh - 65px);
+        transform: translateX(0%)
+    }
+
+    .asideToggle {
+        position: absolute;
+        top: 20px;
+        right: -18px;
+        border-radius: 50%;
+        border: 1px solid var(--border);
+    }
+
+    
+    .asideLeft {display: block;}
+    .asideHeader {display: none;}
+
+    .asidePlaceholder {
+        width: 300px;
+    }
+
+    .toggleAside {
+        transform: translateX(-90%)
+    }
+
+    .asideWidth {
+        width: 40px !important;
+    }
+}
