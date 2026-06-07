@@ -34,8 +34,8 @@ class CommunityRequest extends FormRequest
             'category_id' => 'required|exists:categories,id',
             'description' => 'nullable|string',
  
-            'profile_pic' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:500',
-            'banner_img' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:500',
+            'profile_pic' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:5120',
+            'banner_img' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:5120',
 
             'visibility' => 'required|in:public,private',
 

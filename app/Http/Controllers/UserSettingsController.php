@@ -23,8 +23,8 @@ class UserSettingsController extends Controller
 
         $data = $request->validate([
             'display_name' => ['sometimes', 'required', 'string', 'min:4', 'max:100'],
-            'profile_pic' => ['sometimes', 'image', 'mimes:jpg,jpeg,png,webp', 'max:100'],
-            'banner_img' => ['sometimes', 'image', 'mimes:jpg,jpeg,png,webp', 'max:1000'],
+            'profile_pic' => ['sometimes', 'image', 'mimes:jpg,jpeg,png,webp', 'max:5120'],
+            'banner_img' => ['sometimes', 'image', 'mimes:jpg,jpeg,png,webp', 'max:5120'],
             'bio' => ['sometimes', 'nullable', 'string', 'max:500'],
             'gender' => ['sometimes', 'nullable', 'in:female,male'],
         ]);

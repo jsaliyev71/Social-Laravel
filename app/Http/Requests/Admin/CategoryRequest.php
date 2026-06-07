@@ -30,7 +30,7 @@ class CategoryRequest extends FormRequest
 
         return [
             'name' => ['required', 'string', 'max:100', Rule::unique('categories', 'name')->ignore($categoryId)],
-            'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:60'
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:5120'
         ];
     }
 }
