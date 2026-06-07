@@ -2,10 +2,10 @@
     @include('layouts.aside')
 
     <main class="formPage">
-        <header class="formHeader">
+        <div class="formHeader">
             <h2>Create Community</h2>
             <p>Set up your community identity, visibility, and posting rules.</p>
-        </header>
+        </div>
 
         <form class="formContent" method="POST" action="{{ route('communities.store') }}" enctype="multipart/form-data">
             @csrf
